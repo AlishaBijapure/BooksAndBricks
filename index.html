@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Books & Bricks Café</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lora:ital,wght@1,500&family=Cinzel+Decorative:wght@700&family=Libre+Baskerville&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lottie Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" defer></script>
+
+  <!-- ES Module Shims & Import Map -->
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.163.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+
+<body>
+<!-- ================================================ Header ========================================================== -->
+  <header id="main-header">
+    <div class="header-content">
+      <div class="logo">Books & Bricks</div>
+
+      <nav class="nav-menu">
+        <a href="#hero">Home</a>
+        <a href="Copy of BNB menu PDF_compressed.pdf" target="_blank">Menu</a>
+        <div class="dropdown">
+          <a href="#more" class="dropdown-toggle">Essence</a>
+          <div class="dropdown-menu">
+            <a href="#our-story">Our Story</a>
+            <a href="#philosophy-section">Inspiration</a>
+            <a href="#visit-us">Let's Share a Cup</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+
+    <!-- Mobile Menu Links -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#hero">Home</a>
+      <a href="Copy of BNB menu PDF_compressed.pdf" target="_blank">Menu</a>
+      <a href="#more">Essence</a>
+      <a href="about.html">About</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+<!-- =================================================== Main Page ================================================= -->
+  <section id="hero">
+    <div id="canvas-wrapper"></div>
+    <div id="hero-overlay">
+      <h1 class="hero-title">Books & Bricks</h1>
+      <p class="hero-subtitle" style="margin-top: 0px;">Where stories brew with Coffee...</p>
+    </div>
+    <div id="progress-container">Loading model...</div>
+  </section>
+
+  <script type="module" src="main.js"></script>
+
+<!-- ===================================================== Welcome Section============================================= -->
+  <section id="welcome" class="position-relative text-light">
+    <!-- Background Image -->
+    <div class="welcome-bg"></div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+      <div class="row-content">
+        
+        <!-- Menu Column -->
+        <div class="col-md-6 menu-col flex-column-center">
+          <div class="headline">
+            <h2>Srinagar’s Most Loved Café-Diner</h2>
+          </div>
+          <a href="Copy of BNB menu PDF_compressed.pdf" target="_blank" class="menu-image-button">
+            <img src="images/book.webp" alt="Menu Button" class="menu-img" />
+            <span class="menu-label">Menu</span>
+          </a>
+        </div>
+
+        <!-- Description Column -->
+        <div class="col-md-6 text-col flex-column-center">
+          <div class="text-box">
+            <div class="scrollable-text pe-3">
+              <p>
+                Nestled in the heart of Srinagar, Books & Bricks Café is more than just a café — it’s an experience.
+                A warm, rustic haven for book lovers, coffee seekers, and curious wanderers, our space invites you to
+                slow down and savor the good things in life.
+              </p>
+              <p>
+                Whether you're here for a hearty American-style brunch, a quiet reading nook, or vibrant conversations
+                over coffee, you’ll find your place with us.
+              </p>
+              <p id="colour2">
+                Good food. Great books. Even better memories.
+              </p>
+            </div>
+            <div class="scroll-hint-inside">&#8595;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============================================ About Us Section ==================================================== -->
+  <section id="more">
+
+    <!-- Section 1 -->
+    <section id="our-story" class="story-section">
+      <div class="story-bg"></div>
+      <div class="story-container">
+        <div class="story-text">
+          <br><br>
+          <p>Established in 2015, Books & Bricks Café was born from a simple idea —</p>
+          <h2>To create a space that feels like <span>HOME</span></h2>
+          <p>
+            A place where stories are shared over steaming mugs and hearty meals. What began as a quiet corner café has 
+            now become one of Srinagar’s most iconic destinations — a cultural hub for artists, 
+            students, tourists, and thinkers alike.
+          </p>
+        </div>
+        <div class="story-image">
+          <img src="images/cup-on-book.webp" alt="Coffee and Books">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="story2" class="story-section reverse">
+      <div class="story-bg"></div>
+      <div class="story-container">
+        <div class="story-text">
+          <h2 id="story2heading">Where <span>Comfort</span> Meets <span>Culture</span></h2>
+          <p>
+            Tucked away in the heart of Gogjibagh, Srinagar, 
+            <strong>Books & Bricks Café</strong> is a warm and welcoming hideaway where 
+            rustic charm meets soulful conversation.
+          </p>
+          <p>
+            Since opening our doors in 2015, we’ve grown into more than just 
+            a café — we’ve become a gathering place for thinkers, artists, students, travelers, and old friends.
+          </p>
+          <a href="about.html" class="read-more-link">Read More →</a>
+        </div>
+        <div class="story-image">
+          <img src="images/pizzaa.webp" alt="pizza">
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ========================================== Our Philosophy Section ================================================== -->
+  <section id="philosophy-section" class="philosophy-section">
+
+    <!-- LEFT SIDE -->
+    <div class="philosophy-left">
+      <div class="left-overlay">
+        <div class="philosophy-text">
+          <h2>Our Philosophy</h2>
+          <p>We believe in slow living, real conversations, and comfort food that feeds the soul.</p>
+          <p>Our menu is inspired by classic American diner fare, reinvented with seasonal twists and local ingredients.</p>
+          <p>Each dish is prepared with care, because we know that good food brings people together.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="philosophy-right">
+      <div class="right-overlay">
+        <div class="right-text-box">
+          <h2>Breathe. Sip. Read.</h2>
+          <p>
+            At Books & Bricks, you’re not just a customer — you’re part of a growing community that 
+            celebrates authenticity, creativity, and connection.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<!-- ========================================== Visit Us ================================================== -->
+  <section id="visit-us" class="visit-section">
+    <div class="visit-bg"></div>
+
+    <!-- Large Heading -->
+    <h2 class="visit-heading">
+      Let's Share a Cup.
+      <hr>
+    </h2>
+
+    <!-- Text Box -->
+    <div class="visit-textbox">
+      <p>
+        Whether you're dropping by for your morning brew, bringing your laptop for a cozy workday,
+        or just looking for a peaceful escape with a good book — 
+        <strong>Books & Bricks</strong> welcomes you with open arms.
+      </p>
+    </div>
+
+    <!-- Typing Quotes -->
+    <p class="visit-quote-top">Come for the coffee,</p>
+    <p class="visit-quote-bottom typewriter" id="type-soul"></p>
+  </section>
+
+<!-- ================================================ Media ====================================================== -->
+  <section class="media-section" id="media">
+    <div class="media-bg"></div>
+
+    <!-- Food Carousel -->
+    <h2 class="carousel-title">Our Food</h2>
+    <div class="carousel-wrapper">
+      <span class="scroll-hint left">&#8592;</span>
+      <div class="carousel-container" id="food-carousel">
+        <div class="carousel-track">
+          <img src="images/media/Nachos Veg.jpg" alt="Dish 1" />
+          <img src="images/media/Tower Burger.jpg" alt="Dish 2" />
+          <img src="images/media/Fish n Chips.jpg" alt="Dish 3" />
+          <img src="images/media/Fiery Chicken.jpg" alt="Dish 4" />
+          <img src="images/media/Hummus Tahini.jpg" alt="Dish 5" />
+          <img src="images/media/Marinara Non-Veg.jpg" alt="Dish 6" />
+          <img src="images/media/Cheesy Wedges.jpg" alt="Dish 7" />
+        </div>
+      </div>
+      <span class="scroll-hint right">&#8594;</span>
+    </div>
+
+    <!-- Drinks Carousel -->
+    <h2 class="carousel-title">Our Drinks & Desserts</h2>
+    <div class="carousel-wrapper">
+      <span class="scroll-hint left">&#8592;</span>
+      <div class="carousel-container" id="drinks-carousel">
+        <div class="carousel-track">
+          <img src="images/media/Strawberry Mojito.jpg" alt="Drink 1" />
+          <img src="images/media/Walnut Brownie.JPG" alt="Drink 2" />
+          <img src="images/media/Nutella with Fruits Pancake.jpg" alt="Drink 3" />
+          <img src="images/media/Lemon Iced Tea.jpg" alt="Drink 4" />
+          <img src="images/media/Watermelon Mojito.JPG" alt="Drink 5" />
+          <img src="images/media/Walnut Fruit Salad.jpg" alt="Drink 6" />
+        </div>
+      </div>
+      <span class="scroll-hint right">&#8594;</span>
+    </div>
+  </section>
+
+<!-- ================================================ Instagram ====================================================== -->
+  <section class="instagram-section">
+    <div class="instagram-bg"></div>
+    <div class="container">
+      <h2 class="instagram-title">Moments at Books & Bricks Cafe</h2>
+      <p class="instagram-subtitle">Follow us on Instagram to see what’s brewing!</p>
+      <div class="instagram-feed">
+        <!-- Elfsight Instagram Feed -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-b8324334-345c-47dd-ba55-63e1e7c549c6" data-elfsight-app-lazy></div>
+      </div>
+    </div>
+  </section>
+
+<!-- ================================================ Contact Us ====================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-container">
+
+      <!-- Left: Map -->
+      <div class="contact-left">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.263704120504!2d74.8082146!3d34.0627537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18fbe5c77132f%3A0x27d5d02d1b3639c!2sBooks%20%26%20Bricks%20Cafe!5e0!3m2!1sen!2sin!4v1750324903343!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right: Info -->
+      <div class="contact-right">
+        <h3>Let’s Brew a Conversation<hr></h3>
+        <p>
+          We’re more than just coffee. Come say hi, browse our shelves, or sip something sweet.
+          We’re always happy to see you.
+        </p>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-location-dot"></i> Gogji Bagh, opposite Amar Singh College</p>
+          
+          <p>
+            <a href="tel:+911944012175" style="color: inherit; text-decoration: none;">
+              <i class="fa-solid fa-phone"></i> +91 1944-012175
+            </a>
+          </p>
+
+          <p>
+            <a href="mailto:booksandbrickscafe@gmail.com" style="color: inherit; text-decoration: none;">
+              <i class="fa-solid fa-envelope"></i> booksandbrickscafe@gmail.com
+            </a>
+          </p>
+
+          <a href="https://www.instagram.com/booksandbrickscafe?igsh=cXBlMnQxcnA5NXcz" target="_blank" class="contact-link">
+            <i class="fa-brands fa-instagram"></i> @booksandbrickscafe
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+<!-- ================================================== Scripts ======================================================= -->
+
+<!-- Scroll hint visibility and column expansion -->
+<script>
+  const scrollableText = document.querySelector('.scrollable-text');
+  const scrollHint = document.querySelector('.scroll-hint-inside');
+  const textCol = document.querySelector('.text-col');
+  const menuCol = document.querySelector('.menu-col');
+
+  scrollableText.addEventListener('scroll', () => {
+    scrollHint.style.opacity = scrollableText.scrollTop > 10 ? '0' : '0.9';
+  });
+
+  scrollableText.addEventListener('mouseenter', () => {
+    textCol.classList.add('expanded');
+    menuCol.classList.add('expanded');
+  });
+
+  scrollableText.addEventListener('mouseleave', () => {
+    textCol.classList.remove('expanded');
+    menuCol.classList.remove('expanded');
+  });
+</script>
+
+<!-- Story Section Scroll Animation -->
+<script>
+  const observerOptions = { threshold: 0.3 };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const container = entry.target.querySelector('.story-container');
+      const text = container.querySelector('.story-text');
+      const image = container.querySelector('.story-image');
+
+      text.classList.toggle('animate', entry.isIntersecting);
+      image.classList.toggle('animate', entry.isIntersecting);
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.story-section').forEach(section => observer.observe(section));
+</script>
+
+<!-- Main JS and PDF Button -->
+<script>
+  document.getElementById("menu-btn")?.addEventListener("click", () => {
+    window.open("BooksBricks_Menu.pdf", "_blank");
+  });
+</script>
+
+<!-- Mobile Menu Toggle -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+  const mobileDropdown = document.querySelector('.mobile-dropdown');
+
+  toggle?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+  });
+
+  mobileDropdownToggle?.addEventListener('click', (e) => {
+    e.preventDefault();
+    mobileDropdown.classList.toggle('active');
+  });
+</script>
+
+<!-- Philosophy Section Scroll Animation -->
+<script>
+  const philosophyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const leftText = entry.target.querySelector('.philosophy-text');
+      const rightBox = entry.target.querySelector('.right-text-box');
+
+      leftText.classList.toggle('animate', entry.isIntersecting);
+      rightBox.classList.toggle('animate', entry.isIntersecting);
+    });
+  }, { threshold: 0.3 });
+
+  const philosophySection = document.querySelector('#philosophy-section');
+  if (philosophySection) philosophyObserver.observe(philosophySection);
+</script>
+
+<!-- Visit Section Scroll Animation with Typing -->
+<script>
+  const visitObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const heading = entry.target.querySelector('.visit-heading');
+      const textbox = entry.target.querySelector('.visit-textbox');
+      const quoteTop = entry.target.querySelector('.visit-quote-top');
+      const quoteBottom = entry.target.querySelector('.visit-quote-bottom');
+
+      if (entry.isIntersecting) {
+        heading.classList.add('animate');
+        textbox.classList.add('animate');
+        quoteTop.classList.add('animate');
+        startTypingEffect();
+      } else {
+        heading.classList.remove('animate');
+        textbox.classList.remove('animate');
+        quoteTop.classList.remove('animate');
+        quoteBottom.textContent = "";
+        quoteBottom.dataset.started = "false";
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const visitSection = document.querySelector('#visit-us');
+  if (visitSection) visitObserver.observe(visitSection);
+
+  function startTypingEffect() {
+    const text = "Stay for the Soul...";
+    const target = document.getElementById("type-soul");
+    let i = 0;
+    target.textContent = "";
+    target.dataset.started = "true";
+
+    const interval = setInterval(() => {
+      target.textContent += text.charAt(i);
+      i++;
+      if (i >= text.length) clearInterval(interval);
+    }, 100);
+  }
+</script>
+
+<!-- Carousel Scroll Arrows -->
+<script>
+  document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+    const leftArrow = wrapper.querySelector('.scroll-hint.left');
+    const rightArrow = wrapper.querySelector('.scroll-hint.right');
+    const container = wrapper.querySelector('.carousel-container');
+    const scrollAmount = 300;
+
+    const updateArrowVisibility = () => {
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+      leftArrow.style.display = container.scrollLeft > 10 ? 'block' : 'none';
+      rightArrow.style.display = container.scrollLeft < maxScrollLeft - 10 ? 'block' : 'none';
+    };
+
+    leftArrow.addEventListener('click', () => {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener('click', () => {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    container.addEventListener('scroll', updateArrowVisibility);
+    window.addEventListener('load', updateArrowVisibility);
+  });
+</script>
+
+</body>
+</html>
