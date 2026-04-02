@@ -15,6 +15,10 @@ container.appendChild(renderer.domElement);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
 
+// Orbit Controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
 // Responsive Camera
 const updateCameraAndRenderer = () => {
   const width = container.clientWidth || window.innerWidth;
@@ -25,25 +29,23 @@ const updateCameraAndRenderer = () => {
   camera.updateProjectionMatrix();
   renderer.setSize(width, height);
 
-  // Responsive camera Z distance
+  // Responsive camera Z distance and Target Pan Offset
   const screenWidth = window.innerWidth;
   if (screenWidth < 480) {
     camera.position.set(10, 0, 45); // mobile
+    controls.target.set(0, -1.0, 0); // pan camera down to explicitly push cup up
   } else if (screenWidth < 768) {
     camera.position.set(10, 0, 35); // tablet
+    controls.target.set(0, -0.5, 0);
   } else {
     camera.position.set(10, 0, 30); // desktop
+    controls.target.set(0, 1, 0);
   }
+  controls.update();
 };
 
 updateCameraAndRenderer();
 window.addEventListener('resize', updateCameraAndRenderer);
-
-// Orbit Controls
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.target.set(0, 1, 0);
-controls.update();
 
 // Lighting
 scene.add(new THREE.AmbientLight(0xffffff, 0.6));

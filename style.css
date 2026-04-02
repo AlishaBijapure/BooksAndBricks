@@ -46,19 +46,19 @@ canvas {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: rgba(91, 57, 33, 0.88); /* Deep brown with transparency */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(61, 35, 18, 0.75); /* Sleek deeper dark brown, more transparent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: white;
-  box-shadow: inset 0 -2px 0 rgba(255, 244, 230, 0.4), 0 4px 20px rgba(0, 0, 0, 0.3); /* Inner & outer shadows */
-  border-top: 4px solid rgba(255, 239, 214, 0.4); /* Optional top border */
-  border-bottom: 3px solid #fff4e62d; /* Creamy bottom border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); 
+  border-bottom: 1px solid rgba(255, 244, 230, 0.15); /* Sleek single thin creamy border */
+  transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 28px;
+  padding: 18px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,48 +66,66 @@ canvas {
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1.5px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1.8px;
   color: transparent;
-  background: linear-gradient(120deg, #fce7c2, #f0c89c);
+  background: linear-gradient(120deg, #fce7c2, #f0c89c, #ffffff);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-position: right center;
+  transform: scale(1.02);
+  text-shadow: 0 0 12px rgba(252, 231, 194, 0.5);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .nav-menu a {
-  margin-left: 26px;
+  margin-left: 28px;
   text-decoration: none;
   font-family: 'Playfair Display', serif;
   font-size: 1.05rem;
   font-weight: 500;
   color: #fff4e6;
   position: relative;
-  padding: 6px 0;
+  padding: 8px 12px;
   transition: all 0.3s ease;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  border-radius: 4px;
 }
 
 .nav-menu a::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: 0px;
   left: 50%;
   height: 2px;
   width: 0;
   background: #f5d6ac;
   transition: all 0.3s ease;
   transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(245, 214, 172, 0.8);
 }
 
 .nav-menu a:hover {
-  color: #fcd8a6;
-  text-shadow: 0 0 6px rgba(252, 216, 166, 0.3);
+  color: #ffffff;
+  background: rgba(255, 244, 230, 0.08); /* Subtle pill highlight */
 }
 
 .nav-menu a:hover::after {
-  width: 100%;
+  width: 80%;
 }
 
 /* Dropdown base styles */
@@ -117,36 +135,51 @@ canvas {
 }
 
 .dropdown-menu {
-  display: none;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(15px);
   position: absolute;
-  background: rgba(91, 57, 33, 0.98);
-  border-radius: 6px;
-  padding: 10px 0;
+  background: rgba(50, 28, 14, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 12px 0;
   top: 100%;
   left: 0;
-  min-width: 160px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  min-width: 180px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 244, 230, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 8px 20px;
+  padding: 10px 24px;
   margin-left: 0px;
   color: #fff4e6;
   font-family: 'Playfair Display', serif;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: all 0.3s;
+  border-radius: 0;
+}
+
+.dropdown-menu a::after {
+  display: none;
 }
 
 .dropdown-menu a:hover {
-  background: rgba(255, 244, 230, 0.1);
-  color: #fcd8a6;
+  background: rgba(255, 244, 230, 0.15);
+  color: #ffffff;
+  padding-left: 30px; /* Slight slide to right on hover */
 }
 
 /* Show on hover */
 .dropdown:hover .dropdown-menu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Mobile styles */
@@ -155,21 +188,38 @@ canvas {
   font-size: 1.8rem;
   cursor: pointer;
   color: #fff4e6;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:active {
+  transform: scale(0.9);
 }
 
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background: rgba(91, 57, 33, 0.3);
-  padding: 16px 10px;
+  background: rgba(43, 22, 10, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 10px;
+  border-top: 1px solid rgba(255, 244, 230, 0.1);
+  box-shadow: inset 0 6px 10px -6px rgba(0,0,0,0.5);
 }
 
 .mobile-menu a {
-  padding: 10px 0;
+  padding: 12px 16px;
   color: #fff4e6;
   font-family: 'Playfair Display', serif;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.mobile-menu a:hover {
+  background: rgba(255, 244, 230, 0.1);
+  padding-left: 24px;
 }
 
 .mobile-submenu {
@@ -182,7 +232,21 @@ canvas {
 }
 
 /* Responsive media query */
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
+  .header-content {
+    padding: 14px 20px;
+  }
+  .nav-menu a {
+    margin-left: 12px;
+    font-size: 0.95rem;
+    padding: 6px 8px;
+  }
+  .logo {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 940px) {
   .nav-menu {
     display: none;
   }
@@ -254,12 +318,15 @@ canvas {
 /* ===== Overlay Text ===== */
 #hero-overlay {
   position: absolute;
-  top: 72%;
+  top: auto;
+  bottom: 8%; /* Locks to bottom area preventing overlap */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
   z-index: 2;
-  max-width: 90%;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
 }
 
 .hero-title {
@@ -333,14 +400,14 @@ canvas {
   }
 
   #hero-overlay {
-    top: 60%;
+    bottom: 8%;
     padding: 1rem;
     max-width: 95%;
   }
 
   .hero-title {
     font-size: 3.4rem; /* Slightly bigger than before */
-    margin-top: 140%;
+    margin-top: 0;
     text-align: center;
     line-height: 1.2;
   }
@@ -362,13 +429,17 @@ canvas {
 }
 
 @media (max-width: 480px) {
+  #hero-overlay {
+    bottom: 12%; /* Added spacing for very small mobile screens */
+  }
+
   .hero-title {
-    font-size: 2.6rem; /* Slightly bigger than 2.2rem */
-    margin-top: 160%;
+    font-size: 2.6rem; 
+    margin-top: 0;
   }
 
   .hero-subtitle {
-    font-size: 1.05rem; /* Slightly bigger than 0.95rem */
+    font-size: 1.05rem; 
   }
 }
 
