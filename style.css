@@ -72,7 +72,7 @@ canvas {
   color: transparent;
   background: linear-gradient(120deg, #fce7c2, #f0c89c, #ffffff);
   background-size: 200% auto;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
   transition: all 0.4s ease;
@@ -333,7 +333,7 @@ canvas {
   font-family: 'Cinzel Decorative', cursive;
   font-size: 5rem;
   background: linear-gradient(120deg, #f9f2ea, #af8659);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 0.3rem;
@@ -555,7 +555,7 @@ canvas {
   font-size: 3.2rem;
   font-weight: 700;
   background: linear-gradient(120deg, #fff3de, #f1e7dc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   letter-spacing: 1.5px;
