@@ -8,12 +8,13 @@ const scene = new THREE.Scene();
 scene.background = null;
 
 const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100); // aspect updated below
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+// Disable antialias for enormous framerate jumps on phones and set explicit performance hints
+const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true, powerPreference: "default" });
 
 const container = document.getElementById('canvas-wrapper');
 container.appendChild(renderer.domElement);
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.shadowMap.enabled = true;
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5)); // Capped ratio for massive performance boost
+renderer.shadowMap.enabled = false; // Disable shadows globally since they severely bottleneck mobile GPUs
 
 // Orbit Controls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -56,7 +57,7 @@ scene.add(hemiLight);
 
 const dirLight = new THREE.DirectionalLight(0xffffff, 2);
 dirLight.position.set(-2, 0, 2);
-dirLight.castShadow = true;
+dirLight.castShadow = false; // Disabled shadow computation
 scene.add(dirLight);
 
 // Ground
@@ -65,7 +66,7 @@ const ground = new THREE.Mesh(
   new THREE.MeshStandardMaterial({ color: 0x333333 })
 );
 ground.rotation.x = -Math.PI / 2;
-ground.receiveShadow = true;
+ground.receiveShadow = false; // Disabled shadow map
 scene.add(ground);
 
 // Animation Variables
@@ -158,9 +159,23 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Intersection Observer to Pause Render Loop when Off-Screen
+let isHeroVisible = true;
+const heroObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    isHeroVisible = entry.isIntersecting;
+  });
+}, { threshold: 0 });
+
+const heroSection = document.getElementById('hero');
+if (heroSection) heroObserver.observe(heroSection);
+
 // Animate
 function animate() {
   requestAnimationFrame(animate);
+
+  // Suspend all heavy ThreeJS calculations automatically when scrolled past the hero!
+  if (!isHeroVisible) return;
 
   if (cupGroup && scrollTriggered && !coffeeStarted) {
     cupGroup.rotation.x += (finalRotation.x - cupGroup.rotation.x) * 0.02;
