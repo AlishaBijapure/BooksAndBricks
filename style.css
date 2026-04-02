@@ -339,6 +339,20 @@ canvas {
   margin-bottom: 0.3rem;
 }
 
+/* Maintain proportions and distance from cup on wide but short laptops */
+@media (max-height: 780px) and (min-width: 769px) {
+  #hero-overlay {
+    bottom: 4%;
+  }
+  .hero-title {
+    font-size: 3.8rem;
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /*
 .logo {
   font-family: 'Playfair Display', serif;
@@ -388,7 +402,7 @@ canvas {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #hero {
     background-attachment: scroll; /* Fix for Safari/iOS */
     padding-top: 50px;
@@ -400,7 +414,8 @@ canvas {
   }
 
   #hero-overlay {
-    bottom: 8%;
+    bottom: auto; /* Reverts desktop bottom pin */
+    top: 55%; /* Keys identically beneath the cup */
     padding: 1rem;
     max-width: 95%;
   }
@@ -430,7 +445,8 @@ canvas {
 
 @media (max-width: 480px) {
   #hero-overlay {
-    bottom: 12%; /* Added spacing for very small mobile screens */
+    bottom: auto;
+    top: 55%; /* Keeps it snug under the cup on tiny screens */
   }
 
   .hero-title {
