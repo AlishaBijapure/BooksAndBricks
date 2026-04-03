@@ -19,6 +19,10 @@
 ## The Experience
 
 <div align="center">
+  <img src="images/coffee_drip_animated.webp" alt="3D WebGL Fluid Animation Demo" width="100%" style="border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.4);" />
+</div>
+
+<div align="center">
   <img src="images/cup-on-book.webp" alt="Cafe Environment" width="45%" style="border-radius: 12px;" />
   <img src="images/pizzaa.webp" alt="Cafe Food" width="45%" style="border-radius: 12px;" />
 </div>
