@@ -18,6 +18,13 @@
 
 ## The Experience
 
+<div align="center">
+  <img src="images/cup-on-book.webp" alt="Cafe Environment" width="45%" style="border-radius: 12px;" />
+  <img src="images/pizzaa.webp" alt="Cafe Food" width="45%" style="border-radius: 12px;" />
+</div>
+
+<br>
+
 Nestled in the heart of Srinagar, **Books & Bricks Café** required a landing page that properly communicated its warm, rustic, and authentic aesthetic. This repository contains the custom-built frontend application showcasing the cafe. 
 
 Highlighting the experience is a **fully interactive, 3D rotating coffee cup** deployed via a Three.js canvas layer, offering users a deeply immersive initial impression before smoothly transitioning into elegant storytelling and interactive menus.
