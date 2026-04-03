@@ -19,7 +19,7 @@
 ## The Experience
 
 <div align="center">
-  <img src="images/coffee_drip_animated.webp" alt="3D WebGL Fluid Animation Demo" width="100%" style="border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.4);" />
+  <video autoplay loop muted playsinline width="100%" src="images/coffee-spill.webm"></video>
 </div>
 
 <div align="center">
