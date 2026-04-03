@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250">
+  <defs>
+    <style>
+      .name { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 70px; font-weight: 900; fill: url(#textGradient); text-anchor: middle; letter-spacing: -1.5px; }
+      .name-glow { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 70px; font-weight: 900; fill: url(#textGradient); text-anchor: middle; letter-spacing: -1.5px; filter: drop-shadow(0px 0px 8px rgba(192, 132, 252, 0.4)); opacity: 0.8; }
+      .title { font-family: "SF Mono", "Fira Code", Consolas, monospace; font-size: 15px; font-weight: 500; fill: #94a3b8; text-anchor: middle; letter-spacing: 5px; opacity: 0.9; }
+      .bg { fill: url(#bgGradient); }
+    </style>
+    
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020005" />
+      <stop offset="50%" stop-color="#070014" />
+      <stop offset="100%" stop-color="#02000c" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6" />    <!-- Neon Pink -->
+      <stop offset="50%" stop-color="#c084fc" />   <!-- Cyber Purple -->
+      <stop offset="100%" stop-color="#2dd4bf" />  <!-- Neon Teal -->
+    </linearGradient>
+    
+  </defs>
+
+  <!-- Deep Purple Midnight Background -->
+  <rect class="bg" width="850" height="250" rx="16" />
+
+  <!-- Core Name Rendering -->
+  <text x="425" y="130" class="name-glow">ALISHA BIJAPURE</text>
+  <text x="425" y="130" class="name">ALISHA BIJAPURE</text>
+
+  <!-- Monospaced Software Engineer Tagline -->
+  <text x="425" y="180" class="title">SOFTWARE ENGINEER &lt;/&gt; AI SPECIALIST</text>
+
+  <!-- Minimal Decorative Geometric Accent -->
+  <rect x="375" y="55" width="100" height="4" rx="2" fill="#38bdf8" opacity="0.4" />
+  <rect x="420" y="200" width="10" height="10" rx="5" fill="#f472b6" opacity="0.6" />
+</svg>
