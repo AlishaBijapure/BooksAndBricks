@@ -2,7 +2,7 @@
   <img src="https://github.com/AlishaBijapure/BooksAndBricks/raw/main/images/profile-header.svg" width="100%" alt="Alisha Bijapure Profile Header" />
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=20&pause=1000&color=c9d1d9&center=true&vCenter=true&width=850&lines=Building+cybernetic,+premium+interfaces.;Architecting+intelligent+ML+systems.;Obsessed+with+performance+and+aesthetics." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=20&pause=1000&color=A020F0&center=true&vCenter=true&width=850&lines=Building+cybernetic,+premium+interfaces.;Architecting+intelligent+ML+systems.;Obsessed+with+performance+and+aesthetics." alt="Typing SVG" />
   </a>
 </div>
 
