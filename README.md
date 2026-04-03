@@ -18,9 +18,7 @@
 
 ## The Experience
 
-<div align="center">
-  <video autoplay loop muted playsinline width="100%" src="images/coffee-spill.webm"></video>
-</div>
+https://github.com/AlishaBijapure/BooksAndBricks/raw/main/images/coffee-spill.webm
 
 <div align="center">
   <img src="images/cup-on-book.webp" alt="Cafe Environment" width="45%" style="border-radius: 12px;" />
