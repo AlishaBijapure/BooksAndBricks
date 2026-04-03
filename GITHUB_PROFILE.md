@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://github.com/AlishaBijapure/BooksAndBricks/raw/main/images/profile-header.svg" width="100%" alt="Alisha Bijapure Profile Header" />
-
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=24&pause=1000&color=F93262&center=true&vCenter=true&width=800&lines=Building+sleek,+premium+interfaces.;Architecting+intelligent+ML+systems.;Obsessed+with+performance+and+aesthetics." alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=60&pause=100000&color=F93262&center=true&vCenter=true&width=850&height=120&background=070014&lines=ALISHA+BIJAPURE" alt="Alisha Bijapure" />
+  <br>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&weight=500&size=16&pause=100000&color=38bdf8&center=true&vCenter=true&width=850&height=40&background=070014&lines=SOFTWARE+ENGINEER+%2F%2F+AI+ENTHUSIAST" alt="Subtitle" />
+  <br>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=20&pause=1000&color=c9d1d9&center=true&vCenter=true&width=850&height=80&background=070014&lines=Building+cybernetic,+premium+interfaces.;Architecting+intelligent+ML+systems.;Obsessed+with+performance+and+aesthetics." alt="Typing SVG" />
 </div>
 
 ### 🦇 System Status
