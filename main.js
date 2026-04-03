@@ -22,8 +22,9 @@ controls.enableDamping = true;
 
 // Responsive Camera
 const updateCameraAndRenderer = () => {
-  const width = container.clientWidth || window.innerWidth;
-  const height = container.clientHeight || window.innerHeight;
+  // Use explicitly window inner dims to prevent mobile browser glitches where the canvas inherits the huge page height
+  const width = window.innerWidth;
+  const height = window.innerHeight;
 
   // Update aspect ratio
   camera.aspect = width / height;
