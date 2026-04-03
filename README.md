@@ -16,27 +16,27 @@
 
 ---
 
-## ☕ The Experience
+## The Experience
 
 Nestled in the heart of Srinagar, **Books & Bricks Café** required a landing page that properly communicated its warm, rustic, and authentic aesthetic. This repository contains the custom-built frontend application showcasing the cafe. 
 
 Highlighting the experience is a **fully interactive, 3D rotating coffee cup** deployed via a Three.js canvas layer, offering users a deeply immersive initial impression before smoothly transitioning into elegant storytelling and interactive menus.
 
-## 🚀 Technical Highlights
+## Technical Highlights
 
 - **3D WebGL Rendering:** Features a custom `.glb` 3D model managed by `Three.js` and `OrbitControls`, responding dynamically to screen size and user scrolling.
 - **Micro-Optimized Performance:** Uses **Google DRACO** mesh compression, native Intersection Observers to pause GPU calculations off-screen, and strict PixelRatio capping to deliver seamless frames on modern mobile devices.
 - **Glassmorphism UI:** Complete responsive design featuring modern CSS frosted-glass aesthetics built entirely without bloated CSS frameworks—pure vanilla precision.
 - **Technical SEO:** Fully structured metadata, `robots.txt`, and automated `schema.org/CafeOrCoffeeShop` JSON-LD injections ensuring the cafe explicitly dominates the local Google Search ecosystem.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **HTML5** & **Vanilla CSS3**
 - **JavaScript (ES Modules)**
 - **Three.js** (WebGL 3D Engine)
 - **Intersection Observer API**
 
-## 💻 Local Setup
+## Local Setup
 
 Since this is a deeply optimized static application, no complex build dependencies are required!
 
