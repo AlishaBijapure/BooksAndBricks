@@ -29,9 +29,5 @@
   <text x="425" y="130" class="name">ALISHA BIJAPURE</text>
 
   <!-- Monospaced Software Engineer Tagline -->
-  <text x="425" y="180" class="title">SOFTWARE ENGINEER &lt;/&gt; AI SPECIALIST</text>
-
-  <!-- Minimal Decorative Geometric Accent -->
-  <rect x="375" y="55" width="100" height="4" rx="2" fill="#38bdf8" opacity="0.4" />
-  <rect x="420" y="200" width="10" height="10" rx="5" fill="#f472b6" opacity="0.6" />
+  <text x="425" y="180" class="title">SOFTWARE ENGINEER // AI ENTHUSIAST</text>
 </svg>
