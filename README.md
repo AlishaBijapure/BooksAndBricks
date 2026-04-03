@@ -2,7 +2,7 @@
   <img src="images/LOGO.webp" alt="Books and Bricks Logo" width="200" />
 </div>
 
-<h1 align="center">Books & Bricks Café ✨</h1>
+<h1 align="center">Books & Bricks Café</h1>
 
 <p align="center">
   <b>A highly immersive, performance-optimized static cafe website powered by Three.js WebGL rendering.</b>
