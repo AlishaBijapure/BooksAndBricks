@@ -6,14 +6,14 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=500&size=20&pause=1000&color=c9d1d9&center=true&vCenter=true&width=850&height=80&background=070014&lines=Building+cybernetic,+premium+interfaces.;Architecting+intelligent+ML+systems.;Obsessed+with+performance+and+aesthetics." alt="Typing SVG" />
 </div>
 
-### 🦇 `[ SYSTEM_STATUS :: ONLINE ]`
+### 🦇 `[ ＳＹＳＴＥＭ_ＳＴＡＴＵＳ_ＯＮＬＩＮＥ ]`
 
 > `I am a Software Engineer operating at the intersection of aesthetic design and artificial intelligence.`
 > `My work strips away bloated frameworks in favor of micro-optimized, raw performance.`
 
-- ⚡ `CURRENT_FOCUS:` `All about AI-ML, natively integrated AI Systems, WebGL / Three.js, and Pure UI/UX architectures.`
-- 🖤 `SIGNATURE_PROJECTS:` `[` [Books & Bricks Café](https://booksandbricks.in/) `] // [` [ScholarshipAI](#) `]`
-- 🧠 `ARCHITECTURE_STACK:` `Vanilla JavaScript (ES Modules), HTML5/CSS3, Python`
+- ⚡ **`ＣＵＲＲＥＮＴ_ＦＯＣＵＳ :`** `All about AI-ML, natively integrated AI Systems, WebGL / Three.js, and Pure UI/UX architectures.`
+- 🖤 **`ＳＩＧＮＡＴＵＲＥ_ＰＲＯＪＥＣＴＳ :`** `[` [Books & Bricks Café](https://booksandbricks.in/) `] // [` [ScholarshipAI](#) `]`
+- 🧠 **`ＡＲＣＨＩＴＥＣＴＵＲＥ_ＳＴＡＣＫ :`** `Vanilla JavaScript (ES Modules), HTML5/CSS3, Python`
 
 <br>
 
